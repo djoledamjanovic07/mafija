@@ -236,6 +236,31 @@
             display: flex; align-items: center; justify-content: space-between;
             padding-top: 15px; border-top: 1px solid #30363d;
         }
+        /* FOOTER POTPIS */
+        /* UNAPREĐENI FOOTER POTPIS */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10px; /* Povećan prostor oko teksta */
+            text-align: center;
+            font-size: 0.9rem; /* Uvećan font */
+            color: var(--text); /* Svetlija boja za bolju vidljivost */
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background: linear-gradient(to top, rgba(5, 5, 5, 1) 40%, transparent 100%);
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .dev-brand {
+            font-weight: 900; /* Extra bold */
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary-glow); /* Blagi sjaj oko imena */
+            display: inline-block;
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
@@ -300,7 +325,9 @@
             </div>
         </div>
     </div>
-
+    <footer>
+    <span class="dev-brand">Damjanovići</span> &copy; 2026
+    </footer>
     <script>
         // GLOBALNE PROMENLJIVE
         let gameState = { players: [], activeIdx: null };
