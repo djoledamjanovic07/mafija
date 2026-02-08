@@ -497,8 +497,8 @@
             roles.push({id: 'role-cop', n: 'INSPEKTOR', i: '🕵️‍♂️', d: 'Saznaj ko je mafija.'});
             roles.push({id: 'role-doc', n: 'LEKAR', i: '💉', d: 'Spasi život noćas.'});
             for(let i=0; i<mafiaCount; i++) roles.push({id: 'role-mafia', n: 'MAFIJA', i: '🔪', d: 'Eliminiši građane.'});
-            if(useDama) roles.push({id: 'role-dama', n: 'DAMA', i: '💋', d: 'Blokiraj igrača.'});
-            while(roles.length < total) roles.push({id: 'role-cit', n: 'GRAĐANIN', i: '👤', d: 'Preživi i otkrij.'});
+            if(useDama) roles.push({id: 'role-dama', n: 'DAMA', i: '💋', d: 'Utišaj igrača.'});
+            while(roles.length < total) roles.push({id: 'role-cit', n: 'GRAĐANIN', i: '👤', d: 'Preživi i otkrij ko je mafija.'});
             
             for (let i = roles.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -688,5 +688,6 @@
     </script>
 </body>
 </html>
+
 
 
